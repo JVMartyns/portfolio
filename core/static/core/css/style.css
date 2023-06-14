@@ -2,6 +2,15 @@
   --primary-color: #020024;
   --secondary-color: #013164;
   --text-color: #ffffff;
+  --primary-text-shadow-color: #ffffff;
+  --secondary-text-shadow-color: #70deff;
+  --default-border-color: #ffffff;
+  --profile-border-color: #0066ff;
+  --technology-background-color: #0037ac;
+  --project-background-color: #020024;
+  --primary-box-shadow-color: #70deff;
+  --secondary-box-shadow-color: rgba(255, 255, 255, 0.1);
+  --experience-background-color: #000d24;
 }
 
 html,
@@ -88,7 +97,7 @@ main {
 }
 
 .menu li:hover {
-  text-shadow: 0 0 5px #ffffff;
+  text-shadow: 0 0 5px var(--primary-text-shadow-color);
 }
 
 .menu-toggle {
@@ -133,7 +142,7 @@ main {
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid var(--default-border-color);
   border-radius: 4px;
   margin-left: 10px;
   background: none;
@@ -199,9 +208,7 @@ main {
 .about-profile > img {
   width: 200px;
   border-radius: 50%;
-  border-color: #0066ff;
-  border-style: solid;
-  border-width: 5px;
+  border: 5px solid var(--profile-border-color);
   margin: 50px 90px;
 }
 
@@ -218,6 +225,7 @@ main {
 
 .about-text p {
   text-align: justify;
+  font-size: 17px;
 }
 
 .showcase {
@@ -233,7 +241,7 @@ main {
 
 .technology {
   text-align: center;
-  color: white;
+  color: var(--text-color);
   transition: 0.5s;
 }
 
@@ -248,10 +256,11 @@ main {
   width: 60px;
   height: 60px;
   padding: 15px;
-  box-shadow: 0 0 10px #70deff, inset 0 0 10px #70deff;
+  box-shadow: 0 0 10px var(--primary-box-shadow-color),
+    inset 0 0 10px var(--primary-box-shadow-color);
   border-radius: 50%;
   margin: 15px 20px;
-  background: #0037ac;
+  background: var(--technology-background-color);
   filter: invert(0%);
 }
 
@@ -264,41 +273,41 @@ main {
 }
 
 .technology:hover > h3.item-title {
-  text-shadow: 0 0 10px #70deff;
+  text-shadow: 0 0 10px var(--secondary-text-shadow-color);
 }
 
 .technology:hover > div.technology-icon {
-  box-shadow: 0 0 15px #70deff, inset 0 0 15px #70deff;
+  box-shadow: 0 0 15px var(--primary-box-shadow-color),
+    inset 0 0 15px var(--primary-box-shadow-color);
 }
 
 .language-selector label {
-  color: white;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
 .language-selector select {
-  background: #020024;
-  color: white;
+  background: var(--primary-color);
+  color: var(--text-color);
   border: none;
   border-radius: 4px;
   cursor: pointer;
   height: 2em;
-  border: 1px solid white;
+  border: 1px solid var(--default-border-color);
 }
 
 .theme-selector label {
-  color: white;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
 .theme-selector select {
-  background: #020024;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  background: var(--primary-color);
+  color: var(--text-color);
   cursor: pointer;
   height: 2em;
-  border: 1px solid white;
+  border: 1px solid var(--default-border-color);
+  border-radius: 4px;
 }
 
 .experience-section {
@@ -309,11 +318,11 @@ main {
   max-width: 700px;
   margin: 15px 30px;
   padding: 30px;
-  border: 1px solid white;
+  border: 1px solid var(--default-border-color);
   border-radius: 10px;
-  color: white;
-  background: #000d24;
-  box-shadow: 0px 0px 3px 1px #ffffff;
+  color: var(--text-color);
+  background: var(--experience-background-color);
+  box-shadow: 0px 0px 3px 1px var(--default-border-color);
 }
 
 .experience ul {
@@ -334,10 +343,10 @@ main {
   width: 300px;
   margin: 15px 30px;
   padding: 30px;
-  border: 3px solid white;
+  border: 3px solid var(--default-border-color);
   border-radius: 10px;
-  color: white;
-  background: #020024;
+  color: var(--text-color);
+  background: var(--project-background-color);
   transition: 0.5s;
   cursor: pointer;
   text-align: center;
@@ -345,12 +354,13 @@ main {
 
 .project:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #70deff, inset 0 0 10px #70deff;
+  box-shadow: 0 0 10px var(--primary-box-shadow-color),
+    inset 0 0 10px var(--primary-box-shadow-color);
 }
 
 .project-cover-image {
   width: 100%;
-  border: 2px solid white;
+  border: 2px solid var(--default-border-color);
   border-radius: 10px;
   margin: 10px 0;
 }
@@ -376,10 +386,10 @@ main {
   display: flex;
   justify-content: left;
   margin: 30px 30px 30px 60px;
-  color: white;
+  color: var(--text-color);
   border-radius: 10px;
   align-items: center;
-  box-shadow: 0px 0px 32px 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 32px 1px var(--secondary-box-shadow-color);
   padding: 16px;
   position: relative;
 }
@@ -387,7 +397,7 @@ main {
 .formation-image {
   min-width: 50px;
   height: 80px;
-  box-shadow: -70px 0px 32px 1px rgba(255, 255, 255, 0.1);
+  box-shadow: -70px 0px 32px 1px var(--secondary-box-shadow-color);
 }
 
 .formation-image img {
@@ -397,10 +407,12 @@ main {
   cursor: pointer;
   position: absolute;
   left: -30px;
+  transition: 500ms;
 }
 
 .formation-image img:hover {
-  box-shadow: 0 0 5px #70deff;
+  transform: scale(1.1);
+  box-shadow: 0 0 5px var(--primary-box-shadow-color);
 }
 
 .formation-content {
@@ -409,18 +421,19 @@ main {
 
 .course a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
 }
 
 .course a:hover {
   text-decoration: none;
-  text-shadow: 0 0 5px #70deff;
+  text-shadow: 0 0 5px var(--secondary-text-shadow-color);
+  transform: scale(1.1);
 }
 
 .pages-paragraph {
   text-align: center;
   font-size: 20px;
-  color: white;
+  color: var(--text-color);
 }
 
 .contact-section {
@@ -437,21 +450,21 @@ main {
   align-items: center;
   justify-content: center;
   margin: 20px;
-  color: white;
-  background: #0037ac;
+  color: var(--text-color);
+  background: var(--secondary-color);
   padding: 10px;
   border-radius: 24px;
   width: 100px;
   aspect-ratio: 1/1;
-  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.8),
-    inset 0px 0px 1px 0px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px var(--primary-box-shadow-color),
+    inset 0 0 10px var(--primary-box-shadow-color);
   cursor: pointer;
   transition: 0.5s;
 }
 
 .social-link:hover {
   transform: scale(1.1);
-  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px 5px var(--primary-box-shadow-color);
 }
 
 .social-link img {
@@ -465,24 +478,25 @@ main {
 }
 
 .social-link:hover > h3.item-title {
-  text-shadow: 0 0 5px #ffffff;
+  text-shadow: 0 0 5px var(--primary-text-shadow-color);
 }
 
 .contact-form {
   display: flex;
   justify-content: center;
   padding: 20px;
-  color: white;
+  color: var(--text-color);
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid white;
+  border: 1px solid var(--default-border-color);
   border-radius: 24px;
   width: 500px;
   padding: 30px;
+  background: var(--primary-color);
 }
 
 .contact-form label {
@@ -498,6 +512,7 @@ main {
   resize: none;
   border: none;
   border-radius: 6px;
+  background: #fefefe;
 }
 
 .contact-form #id_captcha_1 {
@@ -528,7 +543,7 @@ main {
 }
 
 .link-item:hover {
-  text-shadow: 0 0 5px #ffffff;
+  text-shadow: 0 0 5px var(--primary-text-shadow-color);
 }
 
 .link-item a {
@@ -536,30 +551,6 @@ main {
   align-items: center;
   color: #ffffff;
   text-decoration: none;
-}
-
-.fa-dev {
-  margin-right: 5px;
-}
-
-.fa-whatsapp {
-  color: #ffffff;
-  margin-right: 5px;
-}
-
-.devicon-google-plain {
-  color: #ffffff;
-  margin-right: 5px;
-}
-
-.devicon-linkedin-plain {
-  color: #ffffff;
-  margin-right: 5px;
-}
-
-.devicon-github-original {
-  color: #ffffff;
-  margin-right: 5px;
 }
 
 footer {
@@ -701,7 +692,7 @@ footer {
   }
 
   .formation-image {
-    box-shadow: 0px -60px 32px 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px -60px 32px 1px var(--secondary-box-shadow-color);
     justify-content: center;
     width: 80px;
     height: 50px;
