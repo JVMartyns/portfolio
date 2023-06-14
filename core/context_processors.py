@@ -11,9 +11,9 @@ def languages(request):
             languages.insert(0, languages.pop(i))
             break
 
-    return {
-        'languages': settings.LANGUAGES,
-    }
+    context = {'languages': languages, }
+
+    return context
 
 
 def themes(request):
@@ -25,8 +25,6 @@ def themes(request):
             themes.insert(0, themes.pop(i))
             break
 
-    print(current_theme)
-    return {
-        'themes': themes,
-        'current_theme': current_theme,
-    }
+    context = {'themes': themes, 'theme': current_theme, }
+
+    return context

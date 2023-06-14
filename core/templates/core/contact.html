@@ -41,7 +41,7 @@
                 {{ field }}
                 {% if field.name == 'captcha' %}
                     <button class="refresh-captcha-btn" type="button" data-open onclick="refreshCaptcha()">
-                        Refresh Captcha
+                        {% trans 'Refresh Captcha' %}
                     </button>
                 {% endif %}
                 {% if field.errors %}

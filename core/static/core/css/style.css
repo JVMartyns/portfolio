@@ -16,6 +16,7 @@
 html,
 body {
   margin: 0;
+  color: var(--text-color);
 }
 
 body {
@@ -555,11 +556,11 @@ main {
 
 footer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  height: 400px;
+  align-items: center;
+  height: 100px;
   background: linear-gradient(var(--secondary-color), var(--primary-color));
-  padding: 0 10px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 997px) {

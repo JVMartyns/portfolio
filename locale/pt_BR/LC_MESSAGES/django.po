@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-10 14:02-0300\n"
+"POT-Creation-Date: 2023-06-14 17:59-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,27 +71,31 @@ msgstr "Pós Graduação"
 msgid "Doctorate"
 msgstr "Doutorado"
 
-#: core/templates/core/base.html:28 core/templates/core/index.html:14
+#: core/templates/core/base.html:33 core/templates/core/index.html:14
 msgid "About"
 msgstr "Sobre"
 
-#: core/templates/core/base.html:29 core/templates/core/formation.html:6
+#: core/templates/core/base.html:34 core/templates/core/formation.html:6
 msgid "Formation"
 msgstr "Formação"
 
-#: core/templates/core/base.html:30 core/templates/core/experience.html:6
+#: core/templates/core/base.html:35 core/templates/core/experience.html:6
 msgid "Experience"
 msgstr "Experiência"
 
-#: core/templates/core/base.html:31 core/templates/core/projects.html:9
+#: core/templates/core/base.html:36 core/templates/core/projects.html:9
 msgid "Projects"
 msgstr "Projetos"
 
-#: core/templates/core/base.html:32 core/templates/core/contact.html:25
+#: core/templates/core/base.html:37 core/templates/core/contact.html:25
 msgid "Contact"
 msgstr "Contato"
 
-#: core/templates/core/contact.html:50
+#: core/templates/core/contact.html:44
+msgid "Refresh Captcha"
+msgstr "Recarregar Captcha"
+
+#: core/templates/core/contact.html:55
 msgid "Submit"
 msgstr "Enviar"
 
@@ -143,13 +147,21 @@ msgstr "Falha ao enviar mensagem!"
 msgid "Please correct the errors below."
 msgstr "Por favor corrija os erros abaixo."
 
-#: portfolio/settings.py:129
+#: portfolio/settings.py:130
 msgid "Portuguese"
 msgstr "Português"
 
-#: portfolio/settings.py:130
+#: portfolio/settings.py:131
 msgid "English"
 msgstr "Inglês"
+
+#: portfolio/settings.py:166
+msgid "Dark"
+msgstr "Escuro"
+
+#: portfolio/settings.py:167
+msgid "Light"
+msgstr "Claro"
 
 #~ msgid "Language"
 #~ msgstr "Idioma"
