@@ -1,0 +1,5 @@
+- Realização do controle de acesso de pessoas, veículos, materiais e ferramentas às instalações do complexo, garantindo a segurança e integridade do patrimônio.
+- Execução de revista pessoal, veicular e inspeção de materiais, assegurando o cumprimento das normas e procedimentos de segurança estabelecidos.
+- Responsável pela pesagem de veículos e materiais, verificação de Notas Fiscais e cargas, garantindo a conformidade e registro adequado de informações.
+- Análise e tratamento de solicitações, fornecendo informações corretas sobre setores, normas e procedimentos aos colaboradores e visitantes, garantindo o correto encaminhamento de demandas.
+- Atendimento cortês e profissional às pessoas que buscam acesso às instalações, mantendo a postura adequada e demonstrando habilidades interpessoais eficazes

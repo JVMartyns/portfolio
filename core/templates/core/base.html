@@ -1,0 +1,52 @@
+{% load static %}
+{% load i18n %}
+{% load custom_filters %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVMartyns</title>
+    <link rel="stylesheet" href="{% static 'core/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/loading_spinner.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/'|add:current_theme|add:'.css' %}">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'core/js/load_before.js' %}"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="location.href='{% url 'core:index' %}'">
+            <img src="{% static '/core/images/logo_white.png' %}" alt="Logo">
+            <h1>JVMartyns</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul>
+                    <li><a href="{% url 'core:index' %}">{% trans "About" %}</a></li>
+                    <li><a href="{% url 'core:formation' %}">{% trans "Formation" %}</a></li>
+                    <li><a href="{% url 'core:experience' %}">{% trans "Experience" %}</a></li>
+                    <li><a href="{% url 'core:projects' %}">{% trans "Projects" %}</a></li>
+                    <li><a href="{% url 'core:contact' %}">{% trans "Contact" %}</a></li>
+                    <li>{% include 'core/partials/_language_selector.html' %}</li>
+                    <li>{% include 'core/partials/_theme_selector.html' %}</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+    <footer>
+        <p>&copy; 2023 JVMartyns</p>
+    </footer>
+</body>
+<script src="{% static 'core/js/load_after.js' %}"></script>
+</html>

@@ -1,0 +1,51 @@
+{% extends 'core/base.html' %}
+{% load custom_filters %}
+{% load i18n %}
+{% block content %}
+<section class="formation-section">
+    <h2 class="topic-title">{% trans "Formation" %}</h2>
+    <br>
+    <ol class="showcase">
+        {% for formation in formations %}
+            <li class="formation">
+                <div class="formation-image" onclick="window.open('{{ formation.institution.site }}', '_blank')">
+                    <img src="{{ formation.institution.image.url }}" alt="formation.institution.name">
+                </div>
+                <div class="formation-content">
+                    <h3 class="item-title">{{ formation.name }}</h3>
+                    <p><strong>{% trans "Institution" %}: </strong> {{ formation.institution.name }}</p>
+                    <p><strong>{% trans "Period" %}: </strong> {{ formation.start_date|date:"F Y" }} - {{ formation.end_date|date:"F Y" }}</p>
+                    <p><strong>{% trans "Level" %}: </strong>{{ formation.degree|trans }}</p>
+                    <p><strong>{% trans "Status" %}: </strong> {{ formation.status|trans }}</p>
+                </div>
+            </li>
+        {% endfor %}
+    </ol>
+</section>
+<section class="courses-section">
+    <h2 class="topic-title">{% trans "Courses" %}</h2>
+    <br>
+    <ol class="showcase">
+        {% for course in courses %}
+            <li class="formation course">
+                <div class="formation-image" onclick="window.open('{{ course.institution.site }}', '_blank')">
+                    <img src="{{ course.institution.image.url }}" alt="course.institution.name">
+                </div>
+                <div class="formation-content">
+                    <h3 class="item-title">
+                        <a 
+                        href="{{ course.certificate_link }}" 
+                        target="_blank" 
+                        title="Ver certificado">
+                            {{ course.name }}
+                        </a>
+                    </h3>
+                    <p><strong>{% trans "Institution" %}: </strong>{{ course.institution.name }}</p>
+                    <p><strong>{% trans "Workload" %}: </strong>{{ course.workload }} {% trans "hours" %}</p>
+                    <p><strong>{% trans "Date" %}: </strong>{{ course.certification_date }} </p>
+                </div>
+            </li>
+        {% endfor %}
+    </ol>
+</section>
+{% endblock content %}

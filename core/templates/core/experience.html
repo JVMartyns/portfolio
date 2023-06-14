@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+{% load custom_filters %}
+{% load i18n %}
+{% block content %}
+    <section class="experience-section">
+        <h2 class="topic-title">{% trans "Experience" %}</h2>
+        <br>
+        <ol class="showcase">
+            {% for experience in experiences %}
+                <li class="experience">
+                    <h3 class="item-title">{{ experience.name }}</h3>
+                    <p><strong>{{ experience.company }}</strong> - <em>{{ experience.start_date }} - {{ experience.end_date }}</em></p>
+                    <br>
+                    {% autoescape off %}
+                        {{ experience.description|markdown }}
+                    {% endautoescape %}
+                </li>
+            {% endfor %}
+        </ol>
+    </section>
+{% endblock content %}

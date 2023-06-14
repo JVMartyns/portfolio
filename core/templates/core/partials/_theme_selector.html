@@ -1,0 +1,10 @@
+<div class="theme-selector">
+    <form id="theme-form" action="{% url 'core:set_theme' %}" method="post">
+        {% csrf_token %}
+        <select name="theme" onchange="this.form.submit()">
+            {% for theme in themes %}
+                <option value="{{ theme.0 }}">{{ theme.1 }}</option>
+            {% endfor %}
+        </select>
+    </form>
+</div>

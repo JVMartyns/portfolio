@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+{% load custom_filters %}
+{% load i18n %}
+{% block content %}
+    <div class="loading-spinner-container" id="loading-spinner-container">
+        <div class="loading-spinner"></div>
+    </div>
+    <section class="projects-section" id="projects-section" style="display: none;">
+        <h2 class="topic-title">{% trans "Projects" %}</h2>
+        <br>
+        <ol class="showcase">
+            {% for project in projects %}
+                <li class="project"
+                    onclick="window.open('{{ project.repository }}', '_blank')">
+                    <h3 class="item-title">{{ project.name }}</h3>
+                    <img class="project-cover-image" src="{{ project.image.url }}"
+                         onload="imageLoaded(this)">
+                    <ul class="project-tech-icons">
+                        {% for technology in project.technologies.all %}
+                            <li>
+                                <img src="{{ technology.image.url }}" title="{{ technology.name }}" alt="{{ technology.name }}">
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    {% autoescape off %}
+                        {{ project.description|markdown }}
+                    {% endautoescape %}
+                </li>
+            {% endfor %}
+        </ol>
+    </section>
+{% endblock content %}

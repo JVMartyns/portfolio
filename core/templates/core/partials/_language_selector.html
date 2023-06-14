@@ -1,0 +1,10 @@
+<div class="language-selector">
+    <form id="language-form" action="{% url 'core:set_language' %}" method="post">
+        {% csrf_token %}
+        <select name="language" onchange="this.form.submit()">
+            {% for language in languages %}
+                <option value="{{ language.0 }}">{{ language.0 }}</option>
+            {% endfor %}
+        </select>
+    </form>
+</div>

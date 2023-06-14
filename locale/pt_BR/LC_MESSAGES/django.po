@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-10 14:02-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: core/forms.py:8
+msgid "Name"
+msgstr "Nome"
+
+#: core/forms.py:10
+msgid "Email"
+msgstr "Email"
+
+#: core/forms.py:14
+msgid "Subject"
+msgstr "Assunto"
+
+#: core/forms.py:15
+msgid "Message"
+msgstr "Mensagem"
+
+#: core/models.py:104
+msgid "Completed"
+msgstr "Completo"
+
+#: core/models.py:105
+msgid "Incomplete"
+msgstr "Incompleto"
+
+#: core/models.py:106
+msgid "Suspended"
+msgstr "Suspenso"
+
+#: core/models.py:107
+msgid "Ongoing"
+msgstr "Em andamento"
+
+#: core/models.py:111
+msgid "High School"
+msgstr "Ensino Médio"
+
+#: core/models.py:112
+msgid "Technical"
+msgstr "Técnico"
+
+#: core/models.py:113
+#, fuzzy
+msgid "Graduation"
+msgstr "Graduação"
+
+#: core/models.py:114
+msgid "Postgraduate"
+msgstr "Pós Graduação"
+
+#: core/models.py:115
+msgid "Doctorate"
+msgstr "Doutorado"
+
+#: core/templates/core/base.html:28 core/templates/core/index.html:14
+msgid "About"
+msgstr "Sobre"
+
+#: core/templates/core/base.html:29 core/templates/core/formation.html:6
+msgid "Formation"
+msgstr "Formação"
+
+#: core/templates/core/base.html:30 core/templates/core/experience.html:6
+msgid "Experience"
+msgstr "Experiência"
+
+#: core/templates/core/base.html:31 core/templates/core/projects.html:9
+msgid "Projects"
+msgstr "Projetos"
+
+#: core/templates/core/base.html:32 core/templates/core/contact.html:25
+msgid "Contact"
+msgstr "Contato"
+
+#: core/templates/core/contact.html:50
+msgid "Submit"
+msgstr "Enviar"
+
+#: core/templates/core/formation.html:16 core/templates/core/formation.html:43
+msgid "Institution"
+msgstr "Instituição"
+
+#: core/templates/core/formation.html:17
+msgid "Period"
+msgstr "Período"
+
+#: core/templates/core/formation.html:18
+msgid "Level"
+msgstr "Nível"
+
+#: core/templates/core/formation.html:19
+msgid "Status"
+msgstr "Status"
+
+#: core/templates/core/formation.html:26
+msgid "Courses"
+msgstr "Cursos"
+
+#: core/templates/core/formation.html:44
+msgid "Workload"
+msgstr "Carga Horária"
+
+#: core/templates/core/formation.html:44
+msgid "hours"
+msgstr "horas"
+
+#: core/templates/core/formation.html:45
+msgid "Date"
+msgstr "Data"
+
+#: core/templates/core/index.html:22
+msgid "Technologies"
+msgstr "Tecnologias"
+
+#: core/views.py:79
+msgid "Message sent successfully!"
+msgstr "Mensagem enviada com sucesso!"
+
+#: core/views.py:81
+msgid "Message failed to send!"
+msgstr "Falha ao enviar mensagem!"
+
+#: core/views.py:83
+msgid "Please correct the errors below."
+msgstr "Por favor corrija os erros abaixo."
+
+#: portfolio/settings.py:129
+msgid "Portuguese"
+msgstr "Português"
+
+#: portfolio/settings.py:130
+msgid "English"
+msgstr "Inglês"
+
+#~ msgid "Language"
+#~ msgstr "Idioma"

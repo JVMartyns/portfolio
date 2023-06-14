@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-06 18:36-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: core/models.py:103 core/seeds/formation_seeds.py:25
+msgid "Completed"
+msgstr ""
+
+#: core/models.py:104 core/seeds/formation_seeds.py:15
+msgid "Incomplete"
+msgstr ""
+
+#: core/models.py:105
+msgid "Suspended"
+msgstr ""
+
+#: core/models.py:106
+msgid "Ongoing"
+msgstr ""
+
+#: core/models.py:110 core/seeds/formation_seeds.py:9
+msgid "High School"
+msgstr ""
+
+#: core/models.py:111 core/seeds/formation_seeds.py:19
+msgid "Technical"
+msgstr ""
+
+#: core/models.py:112
+msgid "Graduation"
+msgstr ""
+
+#: core/models.py:113
+msgid "Postgraduate"
+msgstr ""
+
+#: core/models.py:114
+msgid "Doctorate"
+msgstr ""
+
+#: core/templates/core/base.html:28 core/templates/core/index.html:13
+msgid "About"
+msgstr ""
+
+#: core/templates/core/base.html:29 core/templates/core/formation.html:5
+msgid "Formation"
+msgstr ""
+
+#: core/templates/core/base.html:30
+msgid "Experience"
+msgstr ""
+
+#: core/templates/core/base.html:31
+msgid "Projects"
+msgstr ""
+
+#: core/templates/core/base.html:32
+msgid "Contact"
+msgstr ""
+
+#: core/templates/core/formation.html:15 core/templates/core/formation.html:42
+msgid "Institution"
+msgstr ""
+
+#: core/templates/core/formation.html:16
+msgid "Period"
+msgstr ""
+
+#: core/templates/core/formation.html:17
+msgid "Level"
+msgstr ""
+
+#: core/templates/core/formation.html:18
+msgid "Status"
+msgstr ""
+
+#: core/templates/core/formation.html:25
+msgid "Courses"
+msgstr ""
+
+#: core/templates/core/formation.html:43
+msgid "Workload"
+msgstr ""
+
+#: core/templates/core/formation.html:43
+msgid "hours"
+msgstr ""
+
+#: core/templates/core/formation.html:44
+msgid "Date"
+msgstr ""
+
+#: core/templates/core/index.html:29
+msgid "Technologies"
+msgstr ""
