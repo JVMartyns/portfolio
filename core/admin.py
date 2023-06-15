@@ -2,6 +2,13 @@ from django.contrib import admin
 from core import models
 
 
+@admin.register(models.Profile)
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = (
+        'id', 'first_name', 'last_name', 'image', 'created_at', 'updated_at'
+    )
+
+
 @admin.register(models.Technology)
 class TechnologyAdmin(admin.ModelAdmin):
     list_display = (
