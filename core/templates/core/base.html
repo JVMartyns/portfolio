@@ -19,7 +19,7 @@
 <body>
     <header class="header">
         <div class="logo" onclick="location.href='{% url 'core:index' %}'">
-            <img src="{% static '/core/images/logo_white.png' %}" alt="Logo">
+            <img src="{% static '/core/images/'|add:theme|add:'_theme_logo.png' %}" alt="Logo">
             <h1>JVMartyns</h1>
         </div>
         <div class="menu">

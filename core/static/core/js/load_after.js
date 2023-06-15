@@ -1,15 +1,15 @@
 function toggleMenu() {
     let menuToggle = document.querySelector('.menu-toggle');
-    let menu = document.querySelector('.menu ul');
+    let menuList = document.querySelector('.menu ul');
     menuToggle.classList.toggle('active');
-    menu.classList.toggle('active');
+    menuList.classList.toggle('active');
 
-    let isActive = menu.classList.contains('active');
+    let isActive = menuList.classList.contains('active');
 
     if (isActive) {
-        menu.style.display = 'flex';
+        menuList.style.display = 'flex';
     } else {
-        menu.style.display = 'none';
+        menuList.style.display = 'none';
     }
 }
 
