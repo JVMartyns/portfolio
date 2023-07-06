@@ -4,13 +4,13 @@ from core.models import Institution
 
 def execute_seeds():
     institution = {
-        'EMMTA': 'media_aux/institution/emmta.svg',
-        'IFPE': 'media_aux/institution/ifpe.svg',
-        'Curso em Video': 'media_aux/institution/curso_em_video.svg',
-        'Udemy': 'media_aux/institution/udemy.svg',
-        'Alura': 'media_aux/institution/alura.svg',
-        'Exercito': 'media_aux/institution/exercito_brasileiro.svg',
-        'PlugCamp': 'media_aux/institution/plug_camp.svg',
+        'EMMTA': 'media_aux/institutions/emmta.svg',
+        'IFPE': 'media_aux/institutions/ifpe.svg',
+        'Curso em Video': 'media_aux/institutions/curso_em_video.svg',
+        'Udemy': 'media_aux/institutions/udemy.svg',
+        'Alura': 'media_aux/institutions/alura.svg',
+        'Exercito': 'media_aux/institutions/exercito_brasileiro.svg',
+        'PlugCamp': 'media_aux/institutions/plug_camp.svg',
     }
 
     seeds = [

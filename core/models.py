@@ -1,14 +1,14 @@
 import os
 import uuid
 from django.db import models
-from core.utils.files import generate_unique_filename
 from django.utils.translation import gettext_lazy as _
+from pathlib import Path
+from core.storage_backends import PublicMediaStorage
 
 
 def images_path(instance: models.Model, filename: str) -> str:
     model_name = instance._meta.verbose_name_plural.lower().replace(' ', '_')
-    unique_filename = generate_unique_filename(filename)
-    return os.path.join('images', model_name, unique_filename)
+    return os.path.join('images', model_name, Path(filename).name)
 
 
 class Profile(models.Model):
@@ -143,7 +143,11 @@ class Course(models.Model):
     workload = models.IntegerField()
     certification_date = models.DateField()
     certificate_link = models.URLField()
-    image = models.ImageField(upload_to=images_path, null=True, blank=True)
+    image = models.ImageField(
+        upload_to=images_path,
+        null=True, blank=True,
+        storage=PublicMediaStorage()
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

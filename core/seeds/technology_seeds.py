@@ -5,7 +5,7 @@ technologies = {
     'Elixir': 'media_aux/technologies/elixir.svg',
     'Phoenix': 'media_aux/technologies/phoenix.svg',
     'Python': 'media_aux/technologies/python.svg',
-    'Django': 'media_aux/technologies/django-plain.svg',
+    'Django': 'media_aux/technologies/django.svg',
     'HTML': 'media_aux/technologies/html5.svg',
     'CSS': 'media_aux/technologies/css3.svg',
     'JavaScript': 'media_aux/technologies/javascript.svg',

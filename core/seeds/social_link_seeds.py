@@ -6,7 +6,7 @@ def execute_seeds():
     social_links = {
         'GitHub': 'media_aux/social_links/github.svg',
         'LinkedIn': 'media_aux/social_links/linkedin.svg',
-        'Instagram': 'media_aux/social_links/Instagram.svg',
+        'WhatsApp': 'media_aux/social_links/whatsapp.svg',
     }
 
     seeds = [
@@ -21,9 +21,9 @@ def execute_seeds():
             url='https://www.linkedin.com/in/jvmartyns/',
         ),
         SocialLink(
-            name='Instagram',
-            image=File(open(social_links['Instagram'], 'rb')),
-            url='https://www.instagram.com/jv_martyns/',
+            name='WhatsApp',
+            image=File(open(social_links['WhatsApp'], 'rb')),
+            url='https://api.whatsapp.com/send?phone=5581982940400',
         ),
     ]
 

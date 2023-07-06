@@ -8,3 +8,8 @@ function refreshCaptcha() {
         $('#id_captcha_0').val(result['key'])
     });
 }
+
+
+function changeColor(object) {
+    object.style.fill = 'red';
+}

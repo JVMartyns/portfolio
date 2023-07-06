@@ -13,12 +13,11 @@ function toggleMenu() {
     }
 }
 
-var imagesToLoad = document.querySelectorAll('.project-cover-image');
+var imagesToLoad = document.querySelectorAll('img');
 var loadedImages = 0;
 
 function imageLoaded() {
     loadedImages++;
-    console.log(loadedImages);
     if (loadedImages === imagesToLoad.length) {
         showContent();
     }
@@ -26,7 +25,12 @@ function imageLoaded() {
 
 function showContent() {
     let loadSpinnerContainer = document.getElementById('loading-spinner-container');
-    let ProjectsSection = document.getElementById('projects-section');
+    let content = document.getElementById('main-content');
     loadSpinnerContainer.style.display = 'none';
-    ProjectsSection.style.display = 'block';
+    content.style.display = 'block';
 }
+
+// Adiciona um event listener para o evento "load" em cada imagem
+imagesToLoad.forEach(function (image) {
+    image.addEventListener('load', imageLoaded);
+});

@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.contrib import messages
+from django.core.cache import cache
 from django.core.mail import send_mail
 from django.shortcuts import redirect, render
 from django.db.models import Prefetch
@@ -11,6 +12,9 @@ from core import forms, models
 def index(request):
     technologies = models.Technology.objects.all()\
         .order_by('order')
+
+    social_links = models.SocialLink.objects.all()
+    cache.set('social_links', social_links)
 
     profile = models.Profile.objects.first()
 

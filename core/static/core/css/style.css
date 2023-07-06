@@ -6,17 +6,19 @@
   --secondary-text-shadow-color: #70deff;
   --default-border-color: #ffffff;
   --profile-border-color: #0066ff;
-  --technology-background-color: #0037ac;
+  --technology-background-color: #0045db;
   --project-background-color: #020024;
   --primary-box-shadow-color: #70deff;
   --secondary-box-shadow-color: rgba(255, 255, 255, 0.1);
   --experience-background-color: #000d24;
+  --default-font-family: sans-serif;
 }
 
 html,
 body {
   margin: 0;
   color: var(--text-color);
+  font-family: var(--default-font-family);
 }
 
 body {
@@ -317,6 +319,36 @@ main {
   border-radius: 4px;
 }
 
+.footer-social-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10px 0;
+  background: white;
+  background: var(--technology-background-color);
+  border-radius: 24px;
+}
+
+.footer-social-link {
+  position: relative;
+  top: 0;
+  margin: 5px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: top 500ms;
+  padding: 5px;
+  background: var(--technology-background-color);
+  border-radius: 50%;
+}
+
+.footer-social-link:hover {
+  transform: scale(1.5);
+  top: -10px;
+  box-shadow: 0 0 1px var(--primary-box-shadow-color),
+    inset 0 0 15px var(--primary-box-shadow-color);
+}
+
 .experience-section {
   padding: 30px 30px;
 }
@@ -493,6 +525,7 @@ main {
   justify-content: center;
   padding: 20px;
   color: var(--text-color);
+  font-family: var(--default-font-family);
 }
 
 .contact-form form {
@@ -535,6 +568,11 @@ main {
   margin-top: 10px;
   border: none;
   border-radius: 2px;
+  padding: 0.8em;
+}
+
+.captcha {
+  margin-top: 10px;
 }
 
 .contact-form .submit-btn {
@@ -566,6 +604,7 @@ main {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100px;

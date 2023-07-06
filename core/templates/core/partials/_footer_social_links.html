@@ -1,0 +1,9 @@
+<div>
+    <ul class="footer-social-links-list">
+        {% for social_link in request.social_links %}
+            <li class="footer-social-link" onclick="window.open('{{ social_link.url }}', '_blank')">    
+                <img src="{{ social_link.image.url }}" alt="{{ social_link.name }}" title="{{ social_link.name }}">
+            </li>
+        {% endfor %}
+    </ul>
+</div>
