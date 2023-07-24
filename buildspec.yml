@@ -16,3 +16,5 @@ phases:
 artifacts:
   files:
     - Dockerrun.aws.json
+    - app/build/*
+    - logs/*
