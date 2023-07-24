@@ -4,6 +4,7 @@ phases:
   pre_build:
     commands:
       - echo "Pre-build phase"
+      - docker --version
   build:
     commands:
       - docker build -t portfolio .
