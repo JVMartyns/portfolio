@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "jvmartyns/portfolio:latest",
+    "Name": "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/portfolio:latest",
     "Update": "true"
   },
   "Ports": [
