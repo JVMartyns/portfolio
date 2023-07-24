@@ -349,6 +349,10 @@ main {
     inset 0 0 15px var(--primary-box-shadow-color);
 }
 
+.footer-social-link img {
+  width: 100%;
+}
+
 .experience-section {
   padding: 30px 30px;
 }
