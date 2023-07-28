@@ -10,10 +10,6 @@ ALLOWED_HOSTS = [
     '.jvmartyns.com.br',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "https://portfolio.jvmartyns.com.br",
-]
-
 # S3 settings
 DEFAULT_FILE_STORAGE = 'core.storage_backends.PublicMediaStorage'
 AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
@@ -29,3 +25,7 @@ EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = True
 DEFAULT_RECEIVER = os.getenv('DEFAULT_RECEIVER')
+
+CORS_ALLOWED_ORIGINS = [
+    'https://portfolio.jvmartyns.com.br',
+]
