@@ -10,6 +10,10 @@ ALLOWED_HOSTS = [
     '.jvmartyns.com.br',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://portfolio.jvmartyns.com.br",
+]
+
 # S3 settings
 DEFAULT_FILE_STORAGE = 'core.storage_backends.PublicMediaStorage'
 AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
