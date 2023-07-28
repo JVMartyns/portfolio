@@ -1,0 +1,51 @@
+# Arquivos e diretórios específicos a serem ignorados:
+
+# Ignorar arquivos de bytecode gerados pelo Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar arquivos gerados pelo sistema de controle de versão
+.git
+.gitignore
+
+# Ignorar arquivos de registro e saída de debug (caso estejam no diretório do projeto)
+*.log
+*.log.*
+logs/
+
+# Ignorar arquivos e diretórios temporários
+*.tmp
+*.swp
+*.bak
+
+# Ignorar arquivos de configuração específicos da sua IDE ou editor
+.vscode/
+.idea/
+*.sublime-*
+*.pycharm.*
+
+# Ignorar arquivos de dependências ou cache de dependências
+venv/
+env/
+pipenv/
+
+# Ignorar arquivos e diretórios de compilação ou build
+build/
+dist/
+*.egg-info/
+*.egg/
+*.pyc
+
+# Arquivos ou diretórios específicos
+.dockerignore
+/media
+.gitignore
+.buildspec
+docker_dev_start.sh
+docker-compose.yml
+Dockerfile
+Dockerrun.aws.json
+LICENCE.txt
+README.md
