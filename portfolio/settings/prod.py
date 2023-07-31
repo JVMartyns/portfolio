@@ -6,7 +6,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = [
-    '*',
+    '.jvmartyns.com.br',
 ]
 
 # S3 settings
@@ -26,6 +26,7 @@ EMAIL_USE_TLS = True
 DEFAULT_RECEIVER = os.getenv('DEFAULT_RECEIVER')
 
 CORS_ALLOWED_ORIGINS = [
-    'http://portfolio.jvmartyns.com.br',
     'https://portfolio.jvmartyns.com.br',
 ]
+
+CSRF_TRUSTED_ORIGINS = CORS_ALLOWED_ORIGINS
