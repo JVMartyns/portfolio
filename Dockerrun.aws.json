@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "544369465260.dkr.ecr.us-east-1.amazonaws.com/portfolio:latest",
+    "Name": "${/portfolio/prod/account_id/}.dkr.ecr.${/portfolio/prod/aws_region/}.amazonaws.com/portfolio:latest",
     "Update": "true"
   },
   "Ports": [
