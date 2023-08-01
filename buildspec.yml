@@ -9,6 +9,7 @@ phases:
     commands:
       - echo "Building Docker image"
       - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
+      - echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USER --password-stdin
       - docker build -t portfolio .
       - export IMAGE_URL=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/portfolio:latest
       - docker tag portfolio:latest $IMAGE_URL
