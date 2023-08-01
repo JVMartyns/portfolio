@@ -2,6 +2,8 @@ from django.core.files import File
 from django.db import IntegrityError
 from core.models import Project, Technology
 
+MEDIA_AUX = 'core/static/core/priv/media_aux/'
+
 
 def execute_seeds():
     technologies = {
@@ -22,9 +24,9 @@ def execute_seeds():
     }
 
     projects = {
-        'Portfólio': 'media_aux/projects/portfolio_cover_image.png',
-        'Desafio Bank API Cumbuca': 'media_aux/projects/bank_api_cover_image.png',
-        'Desafio Codificador de Texto': 'media_aux/projects/text_encoder_challenge.png',
+        'Portfólio': MEDIA_AUX + 'projects/portfolio_cover_image.png',
+        'Desafio Bank API Cumbuca': MEDIA_AUX + 'projects/bank_api_cover_image.png',
+        'Desafio Codificador de Texto': MEDIA_AUX + 'projects/text_encoder_challenge.png',
     }
 
     seeds = [

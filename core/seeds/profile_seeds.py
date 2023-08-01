@@ -1,9 +1,11 @@
 from django.core.files import File
 from core.models import Profile
 
+MEDIA_AUX = 'core/static/core/priv/media_aux/'
+
 
 def execute_seeds():
-    profile_image_path = 'media_aux/profile/profile.jpg'
+    profile_image_path = MEDIA_AUX + 'profile/profile.jpg'
     seeds = [
         Profile(
             first_name='João Vitor',

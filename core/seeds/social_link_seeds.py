@@ -1,12 +1,14 @@
 from django.core.files import File
 from core.models import SocialLink
 
+MEDIA_AUX = 'core/static/core/priv/media_aux/'
+
 
 def execute_seeds():
     social_links = {
-        'GitHub': 'media_aux/social_links/github.svg',
-        'LinkedIn': 'media_aux/social_links/linkedin.svg',
-        'WhatsApp': 'media_aux/social_links/whatsapp.svg',
+        'GitHub': MEDIA_AUX + 'social_links/github.svg',
+        'LinkedIn': MEDIA_AUX + 'social_links/linkedin.svg',
+        'WhatsApp': MEDIA_AUX + 'social_links/whatsapp.svg',
     }
 
     seeds = [

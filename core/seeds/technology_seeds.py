@@ -1,21 +1,23 @@
 from django.core.files import File
 from core.models import Technology
 
+MEDIA_AUX = 'core/static/core/priv/media_aux/'
+
 technologies = {
-    'Elixir': 'media_aux/technologies/elixir.svg',
-    'Phoenix': 'media_aux/technologies/phoenix.svg',
-    'Python': 'media_aux/technologies/python.svg',
-    'Django': 'media_aux/technologies/django.svg',
-    'HTML': 'media_aux/technologies/html5.svg',
-    'CSS': 'media_aux/technologies/css3.svg',
-    'JavaScript': 'media_aux/technologies/javascript.svg',
-    'PostgreSQL': 'media_aux/technologies/postgresql.svg',
-    'SQLite': 'media_aux/technologies/sqlite.svg',
-    'Git': 'media_aux/technologies/git.svg',
-    'GitHub': 'media_aux/technologies/github.svg',
-    'Docker': 'media_aux/technologies/docker.svg',
-    'Jenkins': 'media_aux/technologies/jenkins.svg',
-    'Jira': 'media_aux/technologies/jira.svg',
+    'Elixir': MEDIA_AUX + 'technologies/elixir.svg',
+    'Phoenix': MEDIA_AUX + 'technologies/phoenix.svg',
+    'Python': MEDIA_AUX + 'technologies/python.svg',
+    'Django': MEDIA_AUX + 'technologies/django.svg',
+    'HTML': MEDIA_AUX + 'technologies/html5.svg',
+    'CSS': MEDIA_AUX + 'technologies/css3.svg',
+    'JavaScript': MEDIA_AUX + 'technologies/javascript.svg',
+    'PostgreSQL': MEDIA_AUX + 'technologies/postgresql.svg',
+    'SQLite': MEDIA_AUX + 'technologies/sqlite.svg',
+    'Git': MEDIA_AUX + 'technologies/git.svg',
+    'GitHub': MEDIA_AUX + 'technologies/github.svg',
+    'Docker': MEDIA_AUX + 'technologies/docker.svg',
+    'Jenkins': MEDIA_AUX + 'technologies/jenkins.svg',
+    'Jira': MEDIA_AUX + 'technologies/jira.svg',
 }
 
 

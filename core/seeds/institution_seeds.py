@@ -1,16 +1,18 @@
 from django.core.files import File
 from core.models import Institution
 
+MEDIA_AUX = 'core/static/core/priv/media_aux/'
+
 
 def execute_seeds():
     institution = {
-        'EMMTA': 'media_aux/institutions/emmta.svg',
-        'IFPE': 'media_aux/institutions/ifpe.svg',
-        'Curso em Video': 'media_aux/institutions/curso_em_video.svg',
-        'Udemy': 'media_aux/institutions/udemy.svg',
-        'Alura': 'media_aux/institutions/alura.svg',
-        'Exercito': 'media_aux/institutions/exercito_brasileiro.svg',
-        'PlugCamp': 'media_aux/institutions/plug_camp.svg',
+        'EMMTA': MEDIA_AUX + 'institutions/emmta.svg',
+        'IFPE': MEDIA_AUX + 'institutions/ifpe.svg',
+        'Curso em Video': MEDIA_AUX + 'institutions/curso_em_video.svg',
+        'Udemy': MEDIA_AUX + 'institutions/udemy.svg',
+        'Alura': MEDIA_AUX + 'institutions/alura.svg',
+        'Exercito': MEDIA_AUX + 'institutions/exercito_brasileiro.svg',
+        'PlugCamp': MEDIA_AUX + 'institutions/plug_camp.svg',
     }
 
     seeds = [
