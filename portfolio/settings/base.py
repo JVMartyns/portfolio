@@ -31,7 +31,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'modeltranslation',
     'captcha',
-    'analytical',
     'core',
 ]
 
@@ -150,8 +149,3 @@ THEMES = [
 ]
 
 DEFAULT_THEME = 'dark'
-
-ANALYTICAL_INTERNAL_IPS = ['0.0.0.0']
-ANALYTICAL_TRACKING_METHOD = 'ga'
-ANALYTICAL_DOMAIN = 'portfolio.jvmartyns.com.br'
-GOOGLE_ANALYTICS_GTAG_PROPERTY_ID = 'G-0GL4LRYGDW'
