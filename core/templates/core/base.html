@@ -1,9 +1,12 @@
 {% load static %}
 {% load i18n %}
 {% load custom_filters %}
+{% load analytical %}
+{% load google_analytics_gtag %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    {% analytical_head_top %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +18,12 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{% static 'core/js/load_before.js' %}"></script>
+    {% google_analytics_gtag %}
+    {% analytical_head_bottom %}
+    </script>
 </head>
 <body>
+    {% analytical_body_top %}
     <header class="header">
         <div class="logo" onclick="location.href='{% url 'core:index' %}'">
             <img src="{% static 'core/images/'|add:theme|add:'_theme_logo.png' %}" alt="Logo">
@@ -59,6 +66,7 @@
         </div>
         <p>&copy; 2023 JVMartyns</p>
     </footer>
+    {% analytical_body_bottom %}
 </body>
 <script src="{% static 'core/js/load_after.js' %}"></script>
 </html>
