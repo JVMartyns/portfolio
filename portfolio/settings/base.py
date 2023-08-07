@@ -43,8 +43,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
-    'core.middleware.SocialLinksMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'core.middleware.SocialLinksMiddleware',
+    'core.middleware.GoogleAnalyticsMiddleware',
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
