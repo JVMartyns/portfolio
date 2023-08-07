@@ -45,7 +45,6 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'core.middleware.SocialLinksMiddleware',
-    'core.middleware.GoogleAnalyticsMiddleware',
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
@@ -63,6 +62,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'core.context_processors.languages',
                 'core.context_processors.themes',
+                'core.context_processors.google_analytics',
             ],
             'libraries': {
                 'custom_filters': 'core.custom_filters',

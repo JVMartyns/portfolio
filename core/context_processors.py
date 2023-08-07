@@ -28,3 +28,10 @@ def themes(request):
     context = {'themes': themes, 'theme': current_theme, }
 
     return context
+
+
+def google_analytics(request):
+    context = {}
+    if hasattr(settings, 'GA_TRACKING_ID') and settings.GA_TRACKING_ID:
+        return {'GA_TRACKING_ID': settings.GA_TRACKING_ID}
+    return context
