@@ -94,7 +94,7 @@ def set_language(request):
     if request.method == 'POST':
         language_code = request.POST.get('language')
         if language_code:
-            translation.activate(language_code)
+            translation.activate(language_code.lower())
             response = redirect(request.META.get('HTTP_REFERER'))
             response.set_cookie('django_language', language_code)
             return response
@@ -105,5 +105,5 @@ def set_theme(request):
         theme = request.POST.get('theme')
         if theme:
             response = redirect(request.META.get('HTTP_REFERER'))
-            response.set_cookie('django_theme', theme)
+            response.set_cookie('current_theme', theme)
             return response

@@ -1,6 +1,5 @@
 from django.core.cache import cache
 from core import models
-from django.conf import settings
 
 
 class SocialLinksMiddleware:

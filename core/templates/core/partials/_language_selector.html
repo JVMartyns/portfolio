@@ -1,9 +1,11 @@
-<div class="language-selector">
+{% load i18n %}
+<div id="language-selector" class="language-selector">
     <form id="language-form" action="{% url 'core:set_language' %}" method="post">
         {% csrf_token %}
-        <select name="language" onchange="this.form.submit()">
+        <select id="language-select" name="language" onchange="this.form.submit()">
+            <option disabled selected>{% trans 'Language' %}</option>
             {% for language in languages %}
-                <option value="{{ language.0 }}">{{ language.0 }}</option>
+                <option value="{{ language.0 }}" {% if language.0 == current_language %}class="selected" selected{% endif %}>{{ language.1 }}</option>
             {% endfor %}
         </select>
     </form>

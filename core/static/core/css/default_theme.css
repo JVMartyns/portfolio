@@ -1,6 +1,7 @@
 :root {
   --primary-color: #020024;
   --secondary-color: #013164;
+  --secondary-color: linear-gradient(var(--primary-color), #013164);
   --text-color: #ffffff;
   --primary-text-shadow-color: #ffffff;
   --secondary-text-shadow-color: #70deff;

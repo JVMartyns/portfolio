@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #121212;
+  --text-color: #ffffff;
+  --primary-text-shadow-color: #ffffff;
+  --secondary-text-shadow-color: #70deff;
+  --default-border-color: #8b8a8a;
+  --profile-border-color: #8b8a8a;
+  --technology-background-color: #343434;
+  --project-background-color: #1b1b1b;
+  --primary-box-shadow-color: #555555;
+  --secondary-box-shadow-color: rgba(255, 255, 255, 0.1);
+  --experience-background-color: #090f1b;
+}

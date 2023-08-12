@@ -1,17 +1,17 @@
 :root {
-  --primary-color: #020024;
-  --secondary-color: #013164;
+  --primary-color: #000000;
+  --secondary-color: #121212;
   --text-color: #ffffff;
   --primary-text-shadow-color: #ffffff;
   --secondary-text-shadow-color: #70deff;
-  --default-border-color: #ffffff;
+  --default-border-color: #747474;
   --profile-border-color: #0066ff;
-  --technology-background-color: #0045db;
-  --project-background-color: #020024;
-  --primary-box-shadow-color: #70deff;
+  --technology-background-color: #343434;
+  --project-background-color: #1b1b1b;
+  --primary-box-shadow-color: #555555;
   --secondary-box-shadow-color: rgba(255, 255, 255, 0.1);
-  --experience-background-color: #000d24;
-  --default-font-family: sans-serif;
+  --experience-background-color: #090f1b;
+  --default-font-family: "Roboto", sans-serif;
 }
 
 html,
@@ -54,9 +54,9 @@ header {
   box-shadow: 0px 5px 5px 1px var(--primary-color);
 }
 
-main {
+/* main {
   background: linear-gradient(var(--primary-color), var(--secondary-color));
-}
+} */
 
 .logo {
   display: flex;
@@ -494,7 +494,7 @@ main {
   justify-content: center;
   margin: 20px;
   color: var(--text-color);
-  background: var(--secondary-color);
+  background: var(--technology-background-color);
   padding: 10px;
   border-radius: 24px;
   width: 100px;
@@ -765,7 +765,7 @@ footer {
     flex-direction: column;
     margin: 10px;
     margin-top: 50px;
-    max-width: fit-content;
+    width: 100%;
   }
 
   .formation-image {
@@ -784,12 +784,13 @@ footer {
     justify-content: left;
     margin-left: 0;
     margin-top: 10px;
+    text-align: center;
   }
 
   .social-link {
     margin: 10px;
-    padding: 10px;
-    width: 80px;
+    padding: 15px;
+    width: 60px;
     height: 80px;
   }
 

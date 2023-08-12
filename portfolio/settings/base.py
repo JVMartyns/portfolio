@@ -121,8 +121,8 @@ USE_I18N = True
 USE_TZ = True
 
 LANGUAGES = [
-    ('pt-br', _('Portuguese')),
-    ('en', _('English')),
+    ('pt-br', 'Português'),
+    ('en', 'English'),
 ]
 
 LOCALE_PATHS = (
@@ -147,6 +147,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 THEMES = [
     ('dark', _('Dark')),
     ('light', _('Light')),
+    ('default', _('Default')),
 ]
 
-DEFAULT_THEME = 'dark'
+DEFAULT_THEME = 'default'
