@@ -8,9 +8,7 @@ var themeStylesheet = document.querySelector('#theme-stylesheet');
 var siteLogo = document.querySelector('#site-logo');
 
 themeSelector.value = theme;
-document.cookie = 'current_theme=' + theme
-themeStylesheet.setAttribute('href', '/static/core/css/' + theme + '_theme.css');
-siteLogo.setAttribute('src', '/static/core/images/' + theme + '_theme_logo.png');
+document.cookie = 'current_theme=' + theme;
 
 themeSelector.addEventListener('change', () => {
     var selectedTheme = themeSelector.value;
