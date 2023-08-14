@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{% static 'core/css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/loading_spinner.css' %}">
-    <link rel="icon" type="image/x-icon" href="{% static 'core/images/dark_theme_favicon.ico' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'core/images/'|add:current_theme|add:'_theme_favicon.ico' %}">
 
     <link id="theme-stylesheet" rel="stylesheet" href="{% static 'core/css/'|add:current_theme|add:'_theme.css' %}">
 
