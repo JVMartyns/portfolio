@@ -54,10 +54,6 @@ header {
   box-shadow: 0px 5px 5px 1px var(--primary-color);
 }
 
-/* main {
-  background: linear-gradient(var(--primary-color), var(--secondary-color));
-} */
-
 .logo {
   display: flex;
   align-items: center;
@@ -720,27 +716,40 @@ footer {
     background-color: #ffffff;
   }
 
+  .active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
   .menu ul {
     display: none;
   }
 
   .menu a {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .menu-toggle.active ~ ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
     background: var(--primary-color);
     position: fixed;
-    top: 70px;
+    top: 85px;
     right: 0;
     height: 100%;
-    padding-right: 10px;
     justify-content: flex-start;
     opacity: 0.9;
+    border-top: 4px solid white;
+    padding-top: 10px;
   }
 
   .contact-form {
@@ -751,12 +760,18 @@ footer {
     padding: 20px;
   }
 
-  .theme-selector {
+  .language-selector select {
     margin-top: 10px;
+    height: 3em;
+    padding: 10px;
+    font-size: 20px;
   }
 
-  .language-selector {
+  .theme-selector select {
     margin-top: 10px;
+    height: 3em;
+    padding: 10px;
+    font-size: 20px;
   }
 }
 
