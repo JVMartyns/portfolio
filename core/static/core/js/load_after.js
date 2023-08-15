@@ -33,4 +33,8 @@ function showContent() {
 // Adiciona um event listener para o evento "load" em cada imagem
 imagesToLoad.forEach(function (image) {
     image.addEventListener('load', imageLoaded);
+
+    if (image.complete) {
+        imageLoaded();
+    }
 });
