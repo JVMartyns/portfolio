@@ -6,7 +6,8 @@ RUN apk update && apk add --no-cache \
     build-base \
     git \
     inotify-tools \
-    openssh-client
+    openssh-client \
+    gettext
 
 COPY requirements.txt .
 

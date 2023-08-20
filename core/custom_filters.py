@@ -28,4 +28,7 @@ def trans(value: str) -> str:
     :param value: The string that needs to be translated.
     :return: The translated string.
     """
+    if value == 'Graduation':
+        print(gettext(value))
+
     return gettext(value)

@@ -22,7 +22,7 @@ def execute_seeds():
             site='https://www.instagram.com/manoelteodoro.sv'
         ),
         Institution(
-            name='Instituto Federal de Educação, Ciência e Tecnologia - IFPE',
+            name='Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco',
             image=File(open(institution['IFPE'], 'rb')),
             site='https://www.ifpe.edu.br/campus/belo-jardim'
         ),

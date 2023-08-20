@@ -110,8 +110,10 @@ class Formation(models.Model):
     degree_choices = (
         ('High School', _('High School')),
         ('Technical', _('Technical')),
-        ('Graduation', _('Graduation')),
-        ('Postgraduate', _('Postgraduate')),
+        ('Bachelor', _('Bachelor')),
+        ('Specialization', _('Specialization')),
+        ('Master', _('Master')),
+        ('PhD', _('PhD')),
         ('Doctorate', _('Doctorate')),
     )
 
