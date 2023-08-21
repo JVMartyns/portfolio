@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-20 10:33-0300\n"
+"POT-Creation-Date: 2023-08-20 20:58-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,23 +78,23 @@ msgstr "Doutorado"
 msgid "Doctorate"
 msgstr "Doutorado"
 
-#: core/templates/core/base.html:47 core/templates/core/index.html:14
+#: core/templates/core/base.html:48 core/templates/core/index.html:14
 msgid "About"
 msgstr "Sobre"
 
-#: core/templates/core/base.html:48 core/templates/core/formation.html:6
+#: core/templates/core/base.html:49 core/templates/core/formation.html:6
 msgid "Formation"
 msgstr "Formação"
 
-#: core/templates/core/base.html:49 core/templates/core/experience.html:6
+#: core/templates/core/base.html:50 core/templates/core/experience.html:6
 msgid "Experience"
 msgstr "Experiência"
 
-#: core/templates/core/base.html:50 core/templates/core/projects.html:6
+#: core/templates/core/base.html:51 core/templates/core/projects.html:6
 msgid "Projects"
 msgstr "Projetos"
 
-#: core/templates/core/base.html:51 core/templates/core/contact.html:25
+#: core/templates/core/base.html:52 core/templates/core/contact.html:25
 msgid "Contact"
 msgstr "Contato"
 
@@ -106,7 +106,7 @@ msgstr "Recarregar Captcha"
 msgid "Submit"
 msgstr "Enviar"
 
-#: core/templates/core/formation.html:16 core/templates/core/formation.html:43
+#: core/templates/core/formation.html:16 core/templates/core/formation.html:37
 msgid "Institution"
 msgstr "Instituição"
 
@@ -126,17 +126,21 @@ msgstr "Status"
 msgid "Courses"
 msgstr "Cursos"
 
-#: core/templates/core/formation.html:44
+#: core/templates/core/formation.html:38
 msgid "Workload"
 msgstr "Carga Horária"
 
-#: core/templates/core/formation.html:44
+#: core/templates/core/formation.html:38
 msgid "hours"
 msgstr "horas"
 
-#: core/templates/core/formation.html:45
+#: core/templates/core/formation.html:39
 msgid "Date"
 msgstr "Data"
+
+#: core/templates/core/formation.html:42
+msgid "View Certificate"
+msgstr "Ver Certificado"
 
 #: core/templates/core/index.html:22
 msgid "Technologies"

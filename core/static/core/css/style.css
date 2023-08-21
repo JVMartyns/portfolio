@@ -12,6 +12,8 @@
   --secondary-box-shadow-color: rgba(255, 255, 255, 0.1);
   --experience-background-color: #090f1b;
   --default-font-family: "Roboto", sans-serif;
+  --default-font-size: 16px;
+  --view-certificate-btn-color: #0066ff;
 }
 
 html,
@@ -23,7 +25,7 @@ body {
 
 body {
   background: var(--secondary-color);
-  font-size: 16px;
+  font-size: var(--default-font-size);
   z-index: 0;
 }
 
@@ -424,20 +426,24 @@ header {
 .formation {
   display: flex;
   justify-content: left;
-  margin: 30px 30px 30px 60px;
+  margin: 30px;
   color: var(--text-color);
   border-radius: 10px;
   align-items: center;
   box-shadow: 0px 0px 32px 1px var(--secondary-box-shadow-color);
-  padding: 16px;
+  padding: 0;
   position: relative;
   width: 40%;
 }
 
 .formation-image {
-  min-width: 50px;
-  height: 80px;
-  box-shadow: -70px 0px 32px 1px var(--secondary-box-shadow-color);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .formation-image img {
@@ -445,8 +451,6 @@ header {
   height: 80px;
   border-radius: 10px;
   cursor: pointer;
-  position: absolute;
-  left: -30px;
   transition: 500ms;
 }
 
@@ -455,12 +459,35 @@ header {
   box-shadow: 0 0 5px var(--primary-box-shadow-color);
 }
 
-.formation-content {
-  margin-left: 0 px;
+.formation-body {
+  width: 100%;
 }
 
-.course {
-  width: fit-content;
+.formation-content {
+  margin: 30px;
+}
+
+.formation-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px 30px 30px;
+}
+
+.view-certificate-btn {
+  background: var(--view-certificate-btn-color);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: var(--default-font-family);
+  font-size: var(--default-font-size);
+}
+
+.view-certificate-btn:hover {
+  filter: brightness(1.5);
 }
 
 .course a {
@@ -778,24 +805,19 @@ footer {
     padding: 10px;
     font-size: 20px;
   }
-
-  .formation {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 375px) {
   .formation {
     flex-direction: column;
-    margin: 10px;
-    margin-top: 50px;
+    width: 100%;
   }
 
   .formation-image {
-    box-shadow: 0px -60px 32px 1px var(--secondary-box-shadow-color);
     justify-content: center;
-    width: 80px;
-    height: 50px;
+    padding: 20px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: inherit;
   }
 
   .formation-image img {
@@ -803,17 +825,12 @@ footer {
     left: auto;
   }
 
-  .formation-content {
-    justify-content: left;
-    margin-left: 0;
-    margin-top: 10px;
-    text-align: left;
-  }
-
   .formation.course .formation-content {
     text-align: center;
   }
+}
 
+@media screen and (max-width: 375px) {
   .social-link {
     margin: 10px;
     padding: 15px;

@@ -1,5 +1,4 @@
 var prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-console.log(prefersColorScheme);
 var userTheme = localStorage.getItem('userTheme');
 
 var theme = userTheme || prefersColorScheme || 'default';

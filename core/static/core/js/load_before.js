@@ -13,3 +13,5 @@ function refreshCaptcha() {
 function changeColor(object) {
     object.style.fill = 'red';
 }
+
+

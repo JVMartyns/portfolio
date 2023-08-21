@@ -8,8 +8,8 @@
     <ol class="showcase">
         {% for formation in formations %}
             <li class="formation">
-                <div class="formation-image" onclick="window.open('{{ formation.institution.site }}', '_blank')">
-                    <img src="{{ formation.institution.image.url }}" alt="formation.institution.name">
+                <div class="formation-image">
+                    <img src="{{ formation.institution.image.url }}" alt="formation.institution.name" onclick="window.open('{{ formation.institution.site }}', '_blank')">
                 </div>
                 <div class="formation-content">
                     <h3 class="item-title">{{ formation.name }}</h3>
@@ -31,18 +31,16 @@
                 <div class="formation-image" onclick="window.open('{{ course.institution.site }}', '_blank')">
                     <img src="{{ course.institution.image.url }}" alt="course.institution.name">
                 </div>
-                <div class="formation-content">
-                    <h3 class="item-title">
-                        <a 
-                        href="{{ course.certificate_link }}" 
-                        target="_blank" 
-                        title="Ver certificado">
-                            {{ course.name }}
-                        </a>
-                    </h3>
-                    <p><strong>{% trans "Institution" %}: </strong>{{ course.institution.name }}</p>
-                    <p><strong>{% trans "Workload" %}: </strong>{{ course.workload }} {% trans "hours" %}</p>
-                    <p><strong>{% trans "Date" %}: </strong>{{ course.certification_date }} </p>
+                <div class="formation-body">
+                    <div class="formation-content">
+                        <h3 class="item-title">{{ course.name }}</h3>
+                        <p><strong>{% trans "Institution" %}: </strong>{{ course.institution.name }}</p>
+                        <p><strong>{% trans "Workload" %}: </strong>{{ course.workload }} {% trans "hours" %}</p>
+                        <p><strong>{% trans "Date" %}: </strong>{{ course.certification_date }} </p>
+                    </div>
+                    <div class="formation-footer">
+                        <button class="view-certificate-btn" type="button" onclick="window.open('{{ course.certificate_link }}', '_blank')">{% trans "View Certificate" %}</button>
+                    </div>
                 </div>
             </li>
         {% endfor %}
