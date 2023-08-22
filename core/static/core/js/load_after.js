@@ -32,15 +32,20 @@ function showContent() {
 
 function fillCollor(object) {
     var colorThief = new ColorThief();
-    var corPredominante = [0, 0, 0];
+    var rgbColor = [0, 0, 0];
     try {
         var img = object.getElementsByTagName('img')[0];
-        corPredominante = colorThief.getPalette(img, 2)[0];
+        img.crossOrigin = 'anonymous';
+
+        img.onload = function () {
+            rgbColor = colorThief.getPalette(img, 2)[0];
+            object.style.background = `rgba(${rgbColor[0]}, ${rgbColor[1]}, ${rgbColor[2]}, 0.3)`;
+        };
     } catch (e) {
         console.log(e);
     }
 
-    object.style.background = `rgba(${corPredominante[0]}, ${corPredominante[1]}, ${corPredominante[2]}, 0.3)`;
+    object.style.background = `rgba(${rgbColor[0]}, ${rgbColor[1]}, ${rgbColor[2]}, 0.3)`;
 }
 
 // Adiciona um event listener para o evento "load" em cada imagem
