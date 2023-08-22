@@ -19,7 +19,10 @@ function fillCollor(object) {
     var rgbColor = [0, 0, 0];
     try {
         var img = object.getElementsByTagName('img')[0];
+        console.log('Image width:', img.width);
+        console.log('Image height:', img.height);
         rgbColor = colorThief.getPalette(img, 2)[0];
+        console.log('RGB Color:', rgbColor);
         object.style.background = `rgba(${rgbColor[0]}, ${rgbColor[1]}, ${rgbColor[2]}, 0.3)`;
     } catch (e) {
         console.log(e);
