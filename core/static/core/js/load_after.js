@@ -32,8 +32,14 @@ function showContent() {
 
 function fillCollor(object) {
     var colorThief = new ColorThief();
-    var img = object.getElementsByTagName('img')[0];
-    var corPredominante = colorThief.getPalette(img, 2)[0];
+    var corPredominante = [0, 0, 0];
+    try {
+        var img = object.getElementsByTagName('img')[0];
+        var corPredominante = colorThief.getPalette(img, 2)[0];
+    } catch (e) {
+        console.log(e);
+    }
+
     object.style.background = `rgba(${corPredominante[0]}, ${corPredominante[1]}, ${corPredominante[2]}, 0.3)`;
 }
 
