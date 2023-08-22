@@ -35,7 +35,7 @@ function fillCollor(object) {
     var corPredominante = [0, 0, 0];
     try {
         var img = object.getElementsByTagName('img')[0];
-        var corPredominante = colorThief.getPalette(img, 2)[0];
+        corPredominante = colorThief.getPalette(img, 2)[0];
     } catch (e) {
         console.log(e);
     }
