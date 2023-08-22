@@ -19,7 +19,6 @@ function fillCollor(object) {
     var rgbColor = [0, 0, 0];
     try {
         var img = object.getElementsByTagName('img')[0];
-        img.crossOrigin = 'anonymous';
         rgbColor = colorThief.getPalette(img, 2)[0];
         object.style.background = `rgba(${rgbColor[0]}, ${rgbColor[1]}, ${rgbColor[2]}, 0.3)`;
     } catch (e) {
