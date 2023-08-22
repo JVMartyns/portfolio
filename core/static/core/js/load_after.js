@@ -31,9 +31,10 @@ function showContent() {
 }
 
 function fillCollor(object) {
+    var colorThief = new ColorThief();
     var img = object.getElementsByTagName('img')[0];
-    var rgb = getAverageRGB(img);
-    object.style.background = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.5)`;
+    var corPredominante = colorThief.getPalette(img, 2)[0];
+    object.style.background = `rgba(${corPredominante[0]}, ${corPredominante[1]}, ${corPredominante[2]}, 0.3)`;
 }
 
 // Adiciona um event listener para o evento "load" em cada imagem

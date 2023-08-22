@@ -16,6 +16,7 @@
     <link id="theme-stylesheet" rel="stylesheet" href="{% static 'core/css/'|add:current_theme|add:'_theme.css' %}">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     <script src="{% static 'core/js/load_before.js' %}"></script>
 
     {% if GA_TRACKING_ID %}
@@ -74,7 +75,6 @@
         <p>&copy; 2023 JVMartyns</p>
     </footer>
 </body>
-<script src="{% static 'core/js/average_color.js' %}"></script>
 <script src="{% static 'core/js/load_after.js' %}"></script>
 <script src="{% static 'core/js/theme_selector.js' %}"></script>
 <script src="{% static 'core/js/language_selector.js' %}"></script>
