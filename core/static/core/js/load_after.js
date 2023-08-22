@@ -1,3 +1,4 @@
+
 function toggleMenu() {
     let menuToggle = document.querySelector('.menu-toggle');
     let menuList = document.querySelector('.menu ul');
@@ -11,23 +12,6 @@ function toggleMenu() {
     } else {
         menuList.style.display = 'none';
     }
-}
-
-var imagesToLoad = document.querySelectorAll('img');
-var loadedImages = 0;
-
-function imageLoaded() {
-    loadedImages++;
-    if (loadedImages === imagesToLoad.length) {
-        showContent();
-    }
-}
-
-function showContent() {
-    let loadSpinnerContainer = document.getElementById('loading-spinner-container');
-    let content = document.getElementById('main-content');
-    loadSpinnerContainer.style.display = 'none';
-    content.style.display = 'block';
 }
 
 function fillCollor(object) {
@@ -45,16 +29,38 @@ function fillCollor(object) {
     object.style.background = `rgba(${rgbColor[0]}, ${rgbColor[1]}, ${rgbColor[2]}, 0.3)`;
 }
 
+function setFormationImageBackground() {
+    $(document).ready(function () {
+        $('.formation-image').each(function (_index, element) {
+            fillCollor(element);
+        });
+    });
+}
+
+function showContent() {
+    let loadSpinnerContainer = document.getElementById('loading-spinner-container');
+    let content = document.getElementById('main-content');
+    loadSpinnerContainer.style.display = 'none';
+    content.style.display = 'block';
+}
+
+function imageLoaded() {
+    loadedImages++;
+    if (loadedImages === imagesToLoad.length) {
+        if (document.getElementsByClassName('formation-image').length > 0) {
+            setFormationImageBackground();
+        }
+        showContent();
+    }
+}
+
+var imagesToLoad = document.querySelectorAll('img');
+var loadedImages = 0;
+
 // Adiciona um event listener para o evento "load" em cada imagem
 imagesToLoad.forEach(function (image) {
     image.addEventListener('load', imageLoaded);
     if (image.complete) {
         imageLoaded();
     }
-});
-
-$(document).ready(function () {
-    $('.formation-image').each(function (_index, element) {
-        fillCollor(element);
-    });
 });
