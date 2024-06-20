@@ -30,5 +30,7 @@ CORS_ALLOWED_ORIGINS = [
     'https://portfolio.jvmartyns.com.br',
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
+
 CSRF_TRUSTED_ORIGINS = CORS_ALLOWED_ORIGINS
 GA_TRACKING_ID = os.getenv('GA_TRACKING_ID')
